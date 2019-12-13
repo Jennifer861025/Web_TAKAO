@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+h2{
+    color: #212529;
+    font-weight: 700;
+    font-size: 3.7vw;
+}
+h3{
+    font-size: 3vw;
+    font-weight: 700;
+}
+p{
+    color: #6b6b6b;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+/* header */
+.navbar{
+    position: fixed;
+    width: 100vw;
+    opacity: 1;
+    padding: 15px 55px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+.navbar-brand.navbar-toggler.navbar-nav{
+    opacity: 0;
+}
+.nav_logo{
+    width: 150px;
+}
+.nav_button{
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/web/button.png);
+    background-size: contain;
+}
+#navbarSupportedContent{
+    text-align: right;
+}
+.nav-item{
+    margin-left: 50px;
+    font-size: 1.5vw;
+    letter-spacing: 0.5vw;
+    color: #6b6b6b;
+}
+
+.navbar #n2{
+    display: none;
+}
+
+/* section1 */
+.section1{
+    position: relative;
+    display: grid;
+    align-items: center;
+    margin-top: 5.8rem;
+    text-align: center;
+    height: 40vw;
+    width: 100vw;
+    background-image: url(../img/web/foursea.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+.section1_word{
+    display: grid;
+    width: 100vw;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-items: center;
+    align-content: center;
+}
+.section1_word h2 {
+    letter-spacing: 0.5vw;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+.section1_word p{
+    line-height: 3vw;
+    letter-spacing: 0.18vw;
+    text-align: center;
+}
+
+/* section2 */
+.section2{
+    position: relative;
+    height: 55vw;
+    width: 100vw;
+    background-image: url(../img/web/anusea.png);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    top: 90px;
+    text-align: center;
+}
+.section2_word{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-top: 10vw;
+}
+.section2_word :nth-child(1){
+    color: #212529;
+}
+.section2_word p{
+    margin: 0;
+    letter-spacing: 0.18vw;
+    line-height: 2.8vw;
+}
+.section2_word h3{
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+.section2_fruitword{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-self: flex-start;
+    grid-template-rows: repeat(2, 7vw);
+    grid-template-columns: repeat(2, 10vw);
+}
+.section2_fruitword p{
+    font-size: 1.8vw;
+    text-align: center;
+    letter-spacing: 0.18vw;
+    font-weight: normal;
+    color: #212529;
+}
+
+/* season */
+.season{
+    position: relative;
+    display: grid;
+    height: 55vw;
+    width: 100vw;
+    top: 90px;
+    grid-template-columns: 2fr 3fr;
+}
+.season_pic{
+    height: 55vw;
+    width: 43.5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#spring .season_pic{
+    background-image: url(../img/web/spring.png);
+}
+#summer .season_pic{
+    background-image: url(../img/web/summer.png);
+}
+#fall .season_pic{
+    background-image: url(../img/web/fall.png);
+}
+#winter .season_pic{
+    background-image: url(../img/web/winter.png);
+}
+.season_content{
+    display: grid;
+    padding: 0 5vw;
+    padding-top: 7vw;
+    grid-row-gap: 2.5vw;
+}
+.season_content_title p{
+    letter-spacing: 0.3vw;
+    line-height: 2.5vw;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+#season_768{
+    display: none;
+}
+#spring .season_color{
+    color: #FA3F3F;
+}
+.season_content_title h3{
+    letter-spacing: 0.3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+}
+.season_fruit{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 13vw);
+    grid-row-gap: 1vw;
+    align-items: center;
+}
+.season_fruit p{
+    color: #212529;
+}
+.season_month{
+    height: auto;
+    width: 15vw;
+    float: right;
+    margin-top: -2vw;
+}
+#summer .season_color{
+    color: #1fb6ff;
+}
+#fall .season_color{
+    color: #ed8e2a;
+}
+#winter .season_color{
+    color: #6ab4b4;
+}
+/* footer */
+footer{
+    position: relative;
+    margin-top: 90px;
+    width: 100vw;
+    height: 150px;
+    background-color: #3BBFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+.footer_logo_control{
+    width: 15vw;
+}
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 2.5vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.18vw;
+}
+.footer_copyright span{
+    color: #fff;
+    font-size: 1.5vw;
+    letter-spacing: 0.18vw;
+}
+
+@media (max-width: 990px) {
+    .mydrawer-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .mydrawer {
+        width: 100vw;
+        height: 100vh;
+        background: url('../img/web/bugbg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right;
+        color: #fff;
+        padding: 100px 0;
+    }
+
+    .mydrawer-item {
+        color: white !important;
+        margin-bottom: 25px;
+        margin-right: 80px;
+        font-size: 2vw;
+    }
+
+    .navbar-toggler[aria-expanded="true"]
+    .nav_button{
+        background-image: url('../img/web/button_active.png');
+    }
+    .navbar #n1{
+        display: none;
+    }
+    .navbar #n2{
+        display: block;
+    }
+    
+    .section1{
+        margin-top: 4.8rem;
+    }
+    
+}
+
+@media (max-width: 895px){
+    .section1{
+        margin-top: 4.5em;
+    }
+}
+
+@media (max-width: 768px){
+    p{
+        font-size: 2vw;
+    }
+    h3{
+        font-size: 5vw;
+    }
+    .mydrawer-item{
+        font-size: 2.5vw;
+    }
+    .section1{
+        background-image: url(../img/ipad/foursea.png);
+        height: 70vw;
+    }
+
+    .section1_word h2{
+        margin-bottom: 1.5rem;
+        letter-spacing: 1.5vw;
+        font-size: 5vw;
+    }
+
+    .section1_word p{
+        line-height: 5vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .section2{
+        width: 100vw;
+        height: auto;
+        background-image: url(../img/ipad/anusea.png);
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        align-items: flex-end;
+        grid-template-rows: 70vw 1fr;
+        grid-row-gap: 5vw;
+    }
+
+    .section2_word p{
+        letter-spacing: 0.5vw;
+        line-height: 5vw;
+    }
+    .section2_word h3{
+        margin-top: -.5vw;
+        margin-bottom: 4vw;
+        margin-left: 1.5vw;
+        letter-spacing: 1.5vw;
+    }
+    .section2_fruitword{
+        grid-template-columns: repeat(2, 15vw);
+    }
+    .section2_fruitword p{
+        font-size: 2.5vw;
+    }
+    .season{
+        position: relative;
+        display: grid;
+        height: auto;
+        width: 100vw;
+        top: 150px;
+        grid-template-rows: 40vw 1fr;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+    .season_pic{
+        width: 100vw;
+        height: auto;
+    }
+    #spring .season_pic{
+        background-image: url(../img/ipad/spring.png);
+    }
+    #summer .season_pic{
+        background-image: url(../img/ipad/summer.png);
+    }
+    #fall .season_pic{
+        background-image: url(../img/ipad/fall.png);
+    }
+    #winter .season_pic{
+        background-image: url(../img/ipad/winter.png);
+    }
+    .season_content{
+        padding: 0 10vw;
+        padding-top: 8vw;
+        grid-row-gap: 4vw;
+    }
+    #season_1920{
+        display: none;
+    }
+    #season_768{
+        display: block;
+    }
+    .season_content_title p{
+        letter-spacing: 0.5vw;
+        line-height: 5vw;
+        font-size: 2vw;
+    }
+    .season_color{
+        letter-spacing: 0.5vw;
+    }
+    .season_content_title h3{
+        letter-spacing: 2vw;
+        margin-bottom: 4vw;
+        
+    }
+    .season_fruit{
+        grid-row-gap: 2vw;
+        grid-column-gap: 6vw;
+    }
+    .season_fruit p{
+        font-size: 2.5vw;
+    }
+    .season_month{
+        width: 30vw;
+        margin-top: -10vw;
+    }
+
+    footer{
+        margin-top: 210px;
+        padding: 0 10vw;
+    }
+    .footer_logo_control{
+        width: 25vw;
+    }
+    .footer_nav{
+        display: none;
+    }
+    .footer_copyright span{
+        font-size: 2vw;
+        letter-spacing: 1vw;
+    }
+
+}
+
+@media (max-width: 400px){
+    .navbar{
+        padding: 10px 30px;
+    }
+
+    .nav_logo{
+        width: 120px;
+    }
+}
+
+@media (max-width: 320px){
+    p{
+        font-size: 2.5vw;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    .navbar{
+        padding: 10px 25px;
+    }
+
+    .nav_logo{
+        width: 100px;
+    }
+    .nav_button{
+        width: 30px;
+        height: 30px;
+    }
+    .mydrawer {
+        padding: 60px 0;
+    }
+
+    .mydrawer-item {
+        color: white !important;
+        margin-bottom:5px;
+        margin-right: 40px;
+        font-size: 3vw;
+    }
+
+    .section1{
+        height: 80vw;
+        background-image: url(../img/iphone/foursea_ipone.png);
+        margin-top: 3.8rem;
+    }
+    .section1_word{
+        height: 75%;
+    }
+    .section1_word h2{
+        margin-top: 1.5rem;
+        font-size: 6vw;
+    }
+    .section1_word p{
+        margin-top: -.8rem;
+        line-height: 7vw;
+        letter-spacing: 0.5vw;
+    }
+    
+    .section2{
+        grid-template-rows: 85vw 1fr;
+    }
+    .section2_word p{
+        line-height: 7vw;
+    }
+    .section2_word h3{
+        margin-bottom: 5.5vw;
+    }
+    .section2_fruitword{
+        margin-top: 2vw;
+        grid-template-columns: repeat(2, 20vw);
+        grid-template-rows: repeat(2, 12vw);
+    }
+    .section2_fruitword p{
+        font-size: 3vw;
+    }
+
+    .season{
+        grid-template-rows: 33vw 1fr;
+        margin-bottom: 50px;
+    }
+    .season_pic{
+        width: 100vw;
+        height: auto;
+    }
+    #spring .season_pic{
+        background-image: url(../img/iphone/spring.png);
+    }
+    #summer .season_pic{
+        background-image: url(../img/iphone/summer.png);
+    }
+    #fall .season_pic{
+        background-image: url(../img/iphone/fall.png);
+    }
+    #winter .season_pic{
+        background-image: url(../img/iphone/winter.png);
+    }
+
+    .season_content{
+        padding: 0 12vw;
+        padding-top: 6vw;
+        grid-row-gap: 6vw;
+    }
+    .season_content_title p{
+        letter-spacing: 0.4vw;
+        line-height: 7vw;
+        font-size: 1.8vw;
+    }
+    .season_content_title h3{
+        letter-spacing: 1.5vw;
+    }
+    .season_fruit{
+        grid-template-columns: repeat(2, 20vw);
+        grid-row-gap: 0vw;
+        grid-column-gap: 8vw;
+    }
+    .season_fruit p{
+        font-size: 2.5vw;
+        letter-spacing: 0.5vw;
+    }
+    .season_month{
+        width: 25vw;
+        margin-top: -15vw;
+        margin-right: -5vw;
+    }
+
+    footer{
+        height: 80px;
+        margin-top: 140px;
+    }
+    .footer_copyright span{
+        letter-spacing: .5vw;
+    }
+}
+
+
